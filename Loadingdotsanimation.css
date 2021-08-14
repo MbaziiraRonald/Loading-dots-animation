@@ -1,0 +1,69 @@
+
+
+body {
+    height: 100vh;
+    background: #333;
+    display: grid;
+    justify-content: center;
+    align-items: center;  
+}
+
+.circle {
+    height: 2rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: red;
+    /* box-shadow: 0 0 0 1px chocolate,
+                   0 0 0 12px steelblue,
+                   0 0 0 16px darkgreen,
+                   0 0 0 18px darkred; */
+    display: inline-block;
+    margin: .5rem;
+    animation: jumping 6s ease forwards infinite;
+    vertical-align: middle;
+}
+
+@keyframes jumping {
+    0%,100% {
+        background-color: darkgreen;
+        height: 2rem;
+    }
+    20% {
+        height: 10rem;
+    }
+    40% {
+        height: 2rem;
+        background-color: red;
+    }
+    50% {
+        background-color: darkblue;
+        height: 2rem;
+    }
+    70% {
+        height: 10rem;
+        
+    }
+    90% {
+        height: 2rem;
+    }
+}
+
+.circle:nth-child(1){
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.circle:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.circle:nth-child(4){
+    animation-delay: 0.8s;
+}
+
+.circle:nth-child(5){
+    animation-delay: 1s;
+}
